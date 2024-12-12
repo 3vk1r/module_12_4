@@ -1,0 +1,16 @@
+2024-12-12 21:05:42,077 | WARNING | Неверный тип данных для объекта Runner
+Traceback (most recent call last):
+  File "D:\urbandz\firstdz\test_12_4.py", line 21, in test_run
+    second = rat.Runner(122112)
+             ^^^^^^^^^^^^^^^^^^
+  File "D:\urbandz\firstdz\new_runner_and_tournament.py", line 6, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано int
+2024-12-12 21:05:42,080 | WARNING | Неверная скорость для Runner
+Traceback (most recent call last):
+  File "D:\urbandz\firstdz\test_12_4.py", line 10, in test_walk
+    first = rat.Runner('Igor', -2)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\urbandz\firstdz\new_runner_and_tournament.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -2
